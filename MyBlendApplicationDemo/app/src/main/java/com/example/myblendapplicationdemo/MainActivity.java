@@ -72,4 +72,16 @@ public class MainActivity extends AppCompatActivity {
 //                startActivity(FlutterActivity.withNewEngine().initialRoute("router2").build(MainActivity.this));
 
     }
+
+    public void startFlutterActivity4(View view) {
+        startActivity(FlutterActivity.withNewEngine().initialRoute("router4").build(MainActivity.this));
+    }
+
+    public void startFlutterActivity5(View view) {
+        startActivity(FlutterActivity.withNewEngine().initialRoute("router5").build(MainActivity.this));
+    }
+
+    public void startFlutterActivity6(View view) {
+        startActivity(FlutterActivity.withNewEngine().initialRoute("router6").build(MainActivity.this));
+    }
 }

@@ -1,8 +1,11 @@
 import 'dart:ui';
 
 import 'package:flutter/material.dart';
+import 'package:flutter_module/baseline_practice.dart';
 import 'package:flutter_module/button_practice.dart';
 import 'package:flutter_module/container_practice.dart';
+import 'package:flutter_module/listview_practice.dart';
+import 'package:flutter_module/single_child_scroll_view.dart';
 
 import 'home_page.dart';
 import 'login_page.dart';
@@ -11,24 +14,31 @@ import 'login_page.dart';
 void main() => runApp(_widgetForRouter(window.defaultRouteName));
 
 Widget _widgetForRouter(String router) {
-  switch(router) {
+  switch (router) {
     case "router1":
       return MyApp();
     case "router2":
       return ContainerPractice();
-//        child: Text("这个是router2,可以使用flutter attach进行热更新", textDirection: TextDirection.ltr,),
-  case "router3":
+    case "router3":
       return ButtonPractice();
-//        child: Text("这个是router2,可以使用flutter attach进行热更新", textDirection: TextDirection.ltr,),
-    default :
+    case "router4":
+      return ListViewPractice();
+    case "router5":
+      return SingleChildScrollViewPractice();
+    case "router6":
+      return BaseLinePractice();
+    default:
       return Center(
-        child: Text("不清楚的router", textDirection: TextDirection.ltr,),
+        child: Text(
+          "不清楚的router",
+          textDirection: TextDirection.ltr,
+        ),
       );
   }
 }
-class MyApp extends StatelessWidget {
 
-  final routes = <String, WidgetBuilder> {
+class MyApp extends StatelessWidget {
+  final routes = <String, WidgetBuilder>{
     LoginPage.tag: (context) => LoginPage(),
     HomePage.tag: (context) => HomePage(),
   };

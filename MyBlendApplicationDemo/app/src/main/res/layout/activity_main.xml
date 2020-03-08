@@ -35,4 +35,22 @@
         android:onClick="startFlutterActivity3"
         android:text="Button练习" />
 
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="startFlutterActivity4"
+        android:text="ListView练习" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="startFlutterActivity5"
+        android:text="SingleScrollView练习" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="startFlutterActivity6"
+        android:text="BaseLine练习" />
+
 </LinearLayout>
